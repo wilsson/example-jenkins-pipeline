@@ -6,5 +6,10 @@ pipeline {
         echo 'Hello World :D'
       }
     }
+    stage('Start nginx') {
+      steps {
+        sh 'make start'
+      }
+    }
   }
 }
